@@ -21,6 +21,12 @@ uv sync
 ## Uso
 
 ```bash
+uv run grades
+```
+
+O equivalentemente como módulo:
+
+```bash
 uv run python -m grades
 ```
 
@@ -58,6 +64,8 @@ S002,Alan Turing,91
 ```
 
 ## Tests
+
+`uv sync` instala pytest (declarado en el grupo `dev` de `pyproject.toml`):
 
 ```bash
 uv run pytest

@@ -1,7 +1,7 @@
 [project]
 name = "grades"
 version = "0.1.0"
-description = "Add your description here"
+description = "Analizador de calificaciones de estudiantes desde un CSV"
 readme = "README.md"
 authors = [
     { name = "jastk45", email = "jastk45@gmail.com" }
@@ -10,8 +10,13 @@ requires-python = ">=3.13"
 dependencies = []
 
 [project.scripts]
-grades = "grades:main"
+grades = "grades.__main__:main"
 
 [build-system]
 requires = ["uv_build>=0.8.0,<0.9"]
 build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "pytest>=9.1.1",
+]
