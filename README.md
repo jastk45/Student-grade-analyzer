@@ -65,10 +65,10 @@ S002,Alan Turing,91
 
 ## Tests
 
-`uv sync` instala pytest (declarado en el grupo `dev` de `pyproject.toml`):
+Las pruebas usan `unittest` de la biblioteca estándar, sin dependencias externas:
 
 ```bash
-uv run pytest
+uv run python -m unittest discover -s tests -v
 ```
 
 ## API
